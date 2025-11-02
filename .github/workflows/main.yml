@@ -8,6 +8,14 @@ jobs:
   run-preprocessing:
     runs-on: ubuntu-latest
 
+    # ----- TAMBAHKAN 2 BARIS INI UNTUK MEMBERI IZIN -----
+    permissions:
+      contents: write
+    # ---------------------------------------------------
+
+    steps:
+      - name: Checkout Repository
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
